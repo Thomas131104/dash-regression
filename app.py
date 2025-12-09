@@ -171,3 +171,6 @@ def update_graph_or_modal(btn, close_btn, model_name, a, b, x1, x2, nums, e1, e2
         return draw_regularizate_regression(x, y, model_name), False, ""
 
     return create_fig(), is_open, ""
+
+
+server = app.server
