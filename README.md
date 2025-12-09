@@ -17,6 +17,7 @@ Dự án giúp người học và nhà phát triển dễ dàng hình dung cách
 - plotly
 - pandas
 - scikit-learn
+- gunicorn (Linux)
 
 Cài đặt nhanh:
 ```bash
@@ -31,7 +32,7 @@ pip install -r requirements.txt
 git clone https://github.com/Thomas131104/dash-regression.git
 cd dash-regression
 pip install -r requirements.txt
-python app.py
+gunicorn app:server
 ```
 
 - Ứng dụng sẽ chạy tại http://127.0.0.1:8050/.
@@ -47,11 +48,6 @@ python app.py
   - Chọn cả Lasso và Ridge: Elastic Net Regression
 - Xem kết quả hồi quy và biểu đồ trực quan.
 
----
-
-## 🖼️ Ví dụ minh họa
-Thêm ảnh chụp màn hình giao diện sau khi chạy thử để README hấp dẫn hơn.
-
 --- 
 
 ## 📚 Cấu trúc thư mục
@@ -64,4 +60,3 @@ Code
 ## 🔮 Hướng phát triển
 - Hỗ trợ nhiều loại hồi quy khác (đa biến, logistic).
 - Cho phép export kết quả ra CSV/Excel.
-- Thêm giao diện đẹp hơn với Bootstrap.
