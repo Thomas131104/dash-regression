@@ -69,9 +69,9 @@ app.layout = html.Div(
                                          dbc.Col(dbc.Input(id="x2", type="number", value=1), width=5)], className="my-2"),
                                 dbc.Row([dbc.Label("Số điểm:", width=5),
                                          dbc.Col(dbc.Input(id="x-num", type="number", min=2, value=10), width=5)], className="my-2"),
-                                dbc.Row([dbc.Label("Ngưỡng dưới:", width=5),
+                                dbc.Row([dbc.Label("Ngưỡng dưới của nhiễu:", width=5),
                                          dbc.Col(dbc.Input(id="epsilon1", type="number", value=-0.1), width=5)], className="my-2"),
-                                dbc.Row([dbc.Label("Ngưỡng trên:", width=5),
+                                dbc.Row([dbc.Label("Ngưỡng trên của nhiễu:", width=5),
                                          dbc.Col(dbc.Input(id="epsilon2", type="number", value=0.1), width=5)], className="my-2"),
                                 dbc.Row([dbc.Label("Chọn mô hình:", width=5),
                                          dbc.Col(dcc.Checklist(
