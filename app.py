@@ -246,5 +246,4 @@ def draw_linear_model(btn, name_model, a, b, x1, x2, nums, epsilon1, epsilon2):
     return draw_regularizate_regression(x, y, name_model)
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+server = app.server
